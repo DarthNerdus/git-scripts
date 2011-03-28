@@ -20,5 +20,5 @@ if [ "${CURRENT_BRANCH}" != "" ]; then
   echo "From: ${TARGET}"
   echo ""
   
-  git log ..${TARGET}
+  git log ..${TARGET} --graph --pretty=oneline --abbrev-commit
 fi
